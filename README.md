@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository holds the sources of old dAppstore website.
+This repository holds the sources of dAppstore website.
 
 ## Our Vision
 We aim to bring not only the blockchainers, but the rest of the world into the real blockchain service market by providing trustworthy and enjoyable service platform, by:
