@@ -1,0 +1,75 @@
+@import 'stylesheet/media.scss';
+
+.modalOverlay {
+  background: transparent;
+  overflow-y: scroll;
+}
+
+.closeIcon {
+  fill: #425060;
+  height: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.header {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+  border-bottom: 1px solid rgba($color: #2c425b, $alpha: 0.8);
+  margin-bottom: 2rem;
+  font-weight: bold;
+  margin-left: 0.6rem;
+
+  @include mobile-only {
+    margin-bottom: 0rem;
+  }
+}
+
+.main {
+  background: #202d44;
+  border: 1px solid rgba($color: #4dbbef, $alpha: 0.8);
+  border-radius: 12px;
+  padding: 0;
+}
+.content {
+  padding: 0 1.2 rem;
+  margin: 0;
+
+  @include tablet-portrait-and-up {
+    margin: 0 1rem;
+  }
+}
+
+.details {
+  position: relative;
+  font-size: 15px;
+
+  @include mobile-only {
+    min-height: 10rem;
+    margin: 0 1rem 1rem;
+  }
+
+  @include mobile-portrait-and-below {
+    top: -118px;
+  }
+}
+
+.title {
+  color: #ce8d60;
+  border-bottom: 1px solid rgba($color: #32566c, $alpha: 0.8);
+  font-family: PFSquareSansPro-Regular, sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+
+
+.voucherCard {
+  @include mobile-portrait-only {
+    // margin: 0 1.5rem 1rem !important;
+  }
+
+  @include tablet-portrait-and-up {
+    // margin: 0 1.5rem 3rem;
+  }
+}

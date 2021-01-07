@@ -1,0 +1,55 @@
+.guestCheckoutContainer {
+    padding: 1rem;
+
+}
+
+.guestCheckoutContainer>div>div>h1 {
+    display: none;
+}
+
+.guestCheckoutContainer>div {
+    width: auto;
+    padding: 0;
+    background: none;
+    min-height: auto;
+}
+
+.guestCheckoutContainer>div>div {
+    width: auto;
+}
+
+
+
+
+.statusSuccess {
+    margin-top: 2rem;
+
+}
+
+
+.statusSuccess>svg {
+    font-size: 5rem;
+    color: #0077f9;
+}
+
+.statusSuccess>h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.statusSuccess>p {
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+
+
+.link {
+    margin-top: 4rem;
+
+}
+
+.link>a {
+    margin: .2rem;
+}

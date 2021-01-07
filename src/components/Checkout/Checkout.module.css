@@ -1,0 +1,78 @@
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    margin: 2rem auto;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelContainer span {
+    margin-left: 1rem;
+    color: red;
+}
+
+.layer {
+    height: 4rem;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.paypalButton {
+    margin: 1rem 0;
+}
+
+.wrapper {
+    text-align: left;
+}
+
+.wrapper button {
+    margin-top: 1.875rem;
+}
+
+.wrapper .formGroup{
+    margin-bottom: 0;
+}
+
+.formLabel {
+    composes: main-font from '../../stylesheet/util.css';
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+
+.textInput {
+    composes: main-font from '../../stylesheet/util.css';
+    outline: none;
+    width: 100%;
+    height: 3.125rem;
+    min-height: 3.125rem;
+    padding: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.42857143;
+    color: #b4d6ec;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: #456487;
+    transition: all .3s ease 0s;
+    margin-bottom: 1rem;
+}
+
+.textInput:focus {
+    border-color: #4dbbef;
+    background-color: #1d344e;
+}
+
+
+.errorMsg{
+  color: red;
+}

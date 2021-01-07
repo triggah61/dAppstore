@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es6",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["build", "node_modules"]
+}

@@ -1,0 +1,8 @@
+.main-font {
+    font-family: PFSquareSansPro-Regular, sans-serif;
+}
+
+.errorMsg {
+    color: #fe5e51;
+    font-size: 1rem;
+}

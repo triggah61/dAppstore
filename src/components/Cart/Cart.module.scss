@@ -1,0 +1,26 @@
+.table_cart {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    min-width: 999px;
+}
+
+.quantityField {
+    border: 0 !important;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 4px;
+    display: inline-block;
+    background: #555;
+    outline: 0;
+}
+
+.loader {
+    width: 30rem !important;
+    height: auto !important;
+    background: #202a3f !important;
+    padding: 0 !important;
+    border: 1px solid #4dbbef !important;
+    overflow: hidden !important;
+}

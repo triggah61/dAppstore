@@ -1,0 +1,43 @@
+@import 'stylesheet/media.scss';
+
+.timeLeft {
+  color: #00fff6;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timeValue {
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  text-align: center;
+}
+
+.content {
+  background-image: url(/assets/images/presale-item/bg-time.png);
+  background-repeat: no-repeat;
+  background-size: 96%;
+  height: 100%;
+  width: 100%;
+
+  & div:first-child {
+    // Digit
+
+    font-weight: bold;
+
+    @include mobile-only {
+      padding-top: 10%;
+    }
+
+    @include tablet-only {
+      padding-top: 7% !important;
+    }
+
+    @include desktop-and-up  {
+      padding-top: 15% !important;
+    }
+
+
+  }
+}

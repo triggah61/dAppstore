@@ -1,0 +1,32 @@
+
+{
+  "prettier.trailingComma": "es5",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": false,
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+  "files.associations": {
+      "*.js": "javascriptreact"
+  },
+  "[javascriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "git.confirmSync": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "prettier.disableLanguages": [
+      "js"
+  ],
+  "eslint.enable": true,
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "html"
+  ],
+  // "files.autoSave": "afterDelay"
+}

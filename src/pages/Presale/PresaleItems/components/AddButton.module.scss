@@ -1,0 +1,119 @@
+@import 'stylesheet/media.scss';
+
+.addtoCart {
+
+  position: absolute;
+  width: 100%;
+  bottom: 3rem;
+
+  @include mobile-only {
+    position: relative;
+    bottom: 0;
+    margin-top: 2rem;
+  }
+
+
+  --color: #fff;
+  --icon: var(--color);
+  --cart: #fff;
+  --dots: #fff;
+  --background: #275efe;
+  --shadow: #{rgba(#00093d, 0.16)};
+  cursor: pointer;
+
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  border-radius: 22px;
+  padding: 12px 32px;
+  font-weight: 500;
+  line-height: 20px;
+  transform: scale(var(--s, 0.97));
+  box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) var(--shadow);
+  color: var(--color);
+  background: var(--background);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+ .default {
+    padding-left: 16px;
+    position: relative;
+    opacity: var(--o, 1);
+    transform: scale(var(--s, 1));
+    transition: transform 0.3s, opacity 0.3s;
+    transition-delay: var(--d, 0.3s);
+
+    &:before,
+    &:after {
+      content: '';
+      width: 2px;
+      height: 12px;
+      left: 0;
+      top: 4px;
+      border-radius: 1px;
+      background: var(--icon);
+      position: absolute;
+      transform: rotate(var(--r, 0deg));
+      transition: transform 0.25s;
+    }
+
+    &:after {
+      --r: 90deg;
+    }
+  }
+
+  .success {
+    opacity: var(--o, 0);
+    transform: translate(-50%, var(--y, 12px));
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transition: opacity 0.3s, transform 0.3s;
+    transition-delay: var(--d, 0s);
+  }
+
+
+  &.added {
+    .default {
+      --o: 0;
+      --s: 0.8;
+      --d: 0s;
+
+      &:before {
+        --r: -180deg;
+      }
+
+      &:after {
+        --r: -90deg;
+      }
+    }
+
+    .success {
+      --o: 1;
+      --y: 0;
+      --d: 0.3s;
+    }
+
+
+    &:hover{
+      background-position: 0% 0%!important;
+      box-shadow: none!important;
+    }
+  }
+
+  &:not(.added) {
+    &:hover {
+      --s: 1;
+      --s-y: 8px;
+      --s-b: 20px;
+    }
+
+    &:active {
+      --s: 0.94;
+      --s-y: 2px;
+      --s-b: 6px;
+    }
+  }
+}
+
